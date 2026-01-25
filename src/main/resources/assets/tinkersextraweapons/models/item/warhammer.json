@@ -1,0 +1,21 @@
+{
+  "loader": "tconstruct:tool",
+  "parent": "forge:item/default-tool",
+  "textures": {
+    "handle":  "tinkersextraweapons:item/tool/warhammer/handle",
+    "binding": "tinkersextraweapons:item/tool/warhammer/binding",
+    "head":    "tinkersextraweapons:item/tool/warhammer/head"
+  },
+  "modifier_roots": [ "tinkersextraweapons:item/tool/warhammer/modifiers/" ],
+  "parts": [
+    { "name": "handle",  "index": 0 },
+    { "name": "binding", "index": 1 },
+    { "name": "head",    "index": 2 }
+  ],
+  "overrides": [
+    {
+      "predicate": { "tconstruct:broken": 1 },
+      "model": "tinkersextraweapons:item/tool/warhammer/broken"
+    }
+  ]
+}

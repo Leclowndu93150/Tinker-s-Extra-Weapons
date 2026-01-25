@@ -1,0 +1,21 @@
+{
+  "loader": "tconstruct:tool",
+  "parent": "forge:item/default-tool",
+  "textures": {
+    "handle": "tinkersextraweapons:item/tool/boarding_axe/handle",
+    "axe":    "tinkersextraweapons:item/tool/boarding_axe/axe",
+    "blade":  "tinkersextraweapons:item/tool/boarding_axe/blade"
+  },
+  "modifier_roots": [ "tinkersextraweapons:item/tool/boarding_axe/modifiers/" ],
+  "parts": [
+    { "name": "handle", "index": 0 },
+    { "name": "axe",    "index": 1 },
+    { "name": "blade",  "index": 2 }
+  ],
+  "overrides": [
+    {
+      "predicate": { "tconstruct:broken": 1 },
+      "model": "tinkersextraweapons:item/tool/boarding_axe/broken"
+    }
+  ]
+}

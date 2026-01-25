@@ -1,0 +1,23 @@
+{
+  "loader": "tconstruct:tool",
+  "parent": "forge:item/default-tool",
+  "textures": {
+    "handle0": "tinkersextraweapons:item/tool/greatsword/handle0",
+    "handle1": "tinkersextraweapons:item/tool/greatsword/handle1",
+    "blade0":  "tinkersextraweapons:item/tool/greatsword/blade0",
+    "blade1":  "tinkersextraweapons:item/tool/greatsword/blade1"
+  },
+  "modifier_roots": [ "tinkersextraweapons:item/tool/greatsword/modifiers/" ],
+  "parts": [
+    { "name": "handle0", "index": 0 },
+    { "name": "handle1", "index": 1 },
+    { "name": "blade0",  "index": 2 },
+    { "name": "blade1",  "index": 3 }
+  ],
+  "overrides": [
+    {
+      "predicate": { "tconstruct:broken": 1 },
+      "model": "tinkersextraweapons:item/tool/greatsword/broken"
+    }
+  ]
+}

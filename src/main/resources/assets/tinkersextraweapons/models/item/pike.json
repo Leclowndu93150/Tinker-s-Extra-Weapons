@@ -1,0 +1,23 @@
+{
+  "loader": "tconstruct:tool",
+  "parent": "forge:item/default-tool",
+  "textures": {
+    "handle0": "tinkersextraweapons:item/tool/pike/handle0",
+    "handle1": "tinkersextraweapons:item/tool/pike/handle1",
+    "handle2": "tinkersextraweapons:item/tool/pike/handle2",
+    "blade":   "tinkersextraweapons:item/tool/pike/blade"
+  },
+  "modifier_roots": [ "tinkersextraweapons:item/tool/pike/modifiers/" ],
+  "parts": [
+    { "name": "handle0", "index": 0 },
+    { "name": "handle1", "index": 1 },
+    { "name": "handle2", "index": 2 },
+    { "name": "blade",   "index": 3 }
+  ],
+  "overrides": [
+    {
+      "predicate": { "tconstruct:broken": 1 },
+      "model": "tinkersextraweapons:item/tool/pike/broken"
+    }
+  ]
+}

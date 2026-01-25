@@ -1,0 +1,21 @@
+{
+  "loader": "tconstruct:tool",
+  "parent": "forge:item/default-tool",
+  "textures": {
+    "handle": "tinkersextraweapons:item/tool/sickle/handle",
+    "blade0": "tinkersextraweapons:item/tool/sickle/blade0",
+    "blade1": "tinkersextraweapons:item/tool/sickle/blade1"
+  },
+  "modifier_roots": [ "tinkersextraweapons:item/tool/sickle/modifiers/" ],
+  "parts": [
+    { "name": "handle", "index": 0 },
+    { "name": "blade0", "index": 1 },
+    { "name": "blade1", "index": 2 }
+  ],
+  "overrides": [
+    {
+      "predicate": { "tconstruct:broken": 1 },
+      "model": "tinkersextraweapons:item/tool/sickle/broken"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "loader": "tconstruct:tool",
+  "parent": "forge:item/default-tool",
+  "textures": {
+    "handle":  "tinkersextraweapons:item/tool/parrying_dagger/handle",
+    "binding": "tinkersextraweapons:item/tool/parrying_dagger/binding",
+    "blade":   "tinkersextraweapons:item/tool/parrying_dagger/blade"
+  },
+  "modifier_roots": [ "tinkersextraweapons:item/tool/parrying_dagger/modifiers/" ],
+  "parts": [
+    { "name": "handle",  "index": 0 },
+    { "name": "binding", "index": 1 },
+    { "name": "blade",   "index": 2 }
+  ],
+  "overrides": [
+    {
+      "predicate": { "tconstruct:broken": 1 },
+      "model": "tinkersextraweapons:item/tool/parrying_dagger/broken"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "itemGroup.tinkersextraweapons": "Tinker's Extra Weapons",
+
+  "item.tinkersextraweapons.pike": "Pike",
+  "item.tinkersextraweapons.warhammer": "Warhammer",
+  "item.tinkersextraweapons.lance": "Lance",
+  "item.tinkersextraweapons.greatsword": "Greatsword",
+  "item.tinkersextraweapons.sickle": "Sickle",
+  "item.tinkersextraweapons.boarding_axe": "Boarding Axe",
+  "item.tinkersextraweapons.quarterstaff": "Quarterstaff",
+  "item.tinkersextraweapons.parrying_dagger": "Parrying Dagger",
+
+  "modifier.tinkersextraweapons.cavalry": "Cavalry",
+  "modifier.tinkersextraweapons.cavalry.flavor": "Charge!",
+  "modifier.tinkersextraweapons.cavalry.description": "Deals double damage while riding a mount."
+}

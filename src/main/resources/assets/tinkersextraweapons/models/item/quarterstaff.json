@@ -1,0 +1,21 @@
+{
+  "loader": "tconstruct:tool",
+  "parent": "forge:item/default-tool",
+  "textures": {
+    "handle0": "tinkersextraweapons:item/tool/quarterstaff/handle0",
+    "handle1": "tinkersextraweapons:item/tool/quarterstaff/handle1",
+    "collar":  "tinkersextraweapons:item/tool/quarterstaff/collar"
+  },
+  "modifier_roots": [ "tinkersextraweapons:item/tool/quarterstaff/modifiers/" ],
+  "parts": [
+    { "name": "handle0", "index": 0 },
+    { "name": "handle1", "index": 1 },
+    { "name": "collar",  "index": 2 }
+  ],
+  "overrides": [
+    {
+      "predicate": { "tconstruct:broken": 1 },
+      "model": "tinkersextraweapons:item/tool/quarterstaff/broken"
+    }
+  ]
+}

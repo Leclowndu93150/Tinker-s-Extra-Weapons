@@ -1,0 +1,25 @@
+{
+  "loader": "tconstruct:tool",
+  "parent": "forge:item/default-tool",
+  "textures": {
+    "handle": "tinkersextraweapons:item/tool/lance/handle",
+    "plate":  "tinkersextraweapons:item/tool/lance/plate",
+    "blade0": "tinkersextraweapons:item/tool/lance/blade0",
+    "blade1": "tinkersextraweapons:item/tool/lance/blade1",
+    "orange_part": "tinkersextraweapons:item/tool/lance/orange_part"
+  },
+  "modifier_roots": [ "tinkersextraweapons:item/tool/lance/modifiers/" ],
+  "parts": [
+    { "name": "orange_part", "index": -1 },
+    { "name": "handle", "index": 0 },
+    { "name": "plate",  "index": 1 },
+    { "name": "blade0", "index": 2 },
+    { "name": "blade1", "index": 3 }
+  ],
+  "overrides": [
+    {
+      "predicate": { "tconstruct:broken": 1 },
+      "model": "tinkersextraweapons:item/tool/lance/broken"
+    }
+  ]
+}
