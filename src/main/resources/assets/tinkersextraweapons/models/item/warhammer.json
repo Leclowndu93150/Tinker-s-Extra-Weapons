@@ -4,13 +4,15 @@
   "textures": {
     "handle":  "tinkersextraweapons:item/tool/warhammer/handle",
     "binding": "tinkersextraweapons:item/tool/warhammer/binding",
-    "head":    "tinkersextraweapons:item/tool/warhammer/head"
+    "head0":   "tinkersextraweapons:item/tool/warhammer/head0",
+    "head1":   "tinkersextraweapons:item/tool/warhammer/head1"
   },
   "modifier_roots": [ "tinkersextraweapons:item/tool/warhammer/modifiers/" ],
   "parts": [
     { "name": "handle",  "index": 0 },
     { "name": "binding", "index": 1 },
-    { "name": "head",    "index": 2 }
+    { "name": "head0",   "index": 2 },
+    { "name": "head1",   "index": 2 }
   ],
   "overrides": [
     {

@@ -66,13 +66,17 @@ public class TKEWToolDefinitions extends AbstractToolDefinitionDataProvider {
                 .module(defaultThree)
                 .module(new SetStatsModule(StatsNBT.builder()
                         .set(ToolStats.ATTACK_DAMAGE, 10f)
-                        .set(ToolStats.ATTACK_SPEED, 0.7f).build()))
+                        .set(ToolStats.ATTACK_SPEED, 0.7f)
+                        .set(ToolStats.MINING_SPEED, 1.5f).build()))
                 .module(new MultiplyStatsModule(MultiplierNBT.builder()
                         .set(ToolStats.DURABILITY, 1.0f).build()))
                 .module(IsEffectiveModule.tag(BlockTags.MINEABLE_WITH_PICKAXE))
                 .module(ToolSlotsModule.builder()
                         .slots(SlotType.UPGRADE, 3)
-                        .slots(SlotType.ABILITY, 1).build());
+                        .slots(SlotType.ABILITY, 1).build())
+                .module(ToolTraitsModule.builder()
+                        .trait(TKEWModifierIds.KNOCKBACK, 1)
+                        .trait(TKEWModifierIds.QUAKE, 1).build());
 
         define(TKEWDefinitions.LANCE)
                 .module(PartStatsModule.parts()
@@ -133,13 +137,16 @@ public class TKEWToolDefinitions extends AbstractToolDefinitionDataProvider {
                 .module(defaultThree)
                 .module(new SetStatsModule(StatsNBT.builder()
                         .set(ToolStats.ATTACK_DAMAGE, 8f)
-                        .set(ToolStats.ATTACK_SPEED, 0.8f).build()))
+                        .set(ToolStats.ATTACK_SPEED, 0.8f)
+                        .set(ToolStats.MINING_SPEED, 2f).build()))
                 .module(new MultiplyStatsModule(MultiplierNBT.builder()
                         .set(ToolStats.DURABILITY, 0.8f).build()))
                 .module(IsEffectiveModule.tag(BlockTags.MINEABLE_WITH_AXE))
                 .module(ToolSlotsModule.builder()
                         .slots(SlotType.UPGRADE, 3)
-                        .slots(SlotType.ABILITY, 1).build());
+                        .slots(SlotType.ABILITY, 1).build())
+                .module(ToolTraitsModule.builder()
+                        .trait(TKEWModifierIds.SWORDBREAKER, 1).build());
 
         define(TKEWDefinitions.QUARTERSTAFF)
                 .module(PartStatsModule.parts()

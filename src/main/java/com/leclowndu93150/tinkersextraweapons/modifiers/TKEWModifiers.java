@@ -12,5 +12,7 @@ public class TKEWModifiers {
 
     public static void onModifierRegistration(ModifierManager.ModifierRegistrationEvent event) {
         event.registerStatic(TKEWModifierIds.CAVALRY, new CavalryModifier());
+        event.registerStatic(TKEWModifierIds.QUAKE, new QuakeModifier());
+        event.registerStatic(TKEWModifierIds.SWORDBREAKER, new SwordbreakerModifier());
     }
 }

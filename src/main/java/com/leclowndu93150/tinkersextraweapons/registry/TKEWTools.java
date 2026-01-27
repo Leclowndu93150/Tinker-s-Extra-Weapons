@@ -2,6 +2,7 @@ package com.leclowndu93150.tinkersextraweapons.registry;
 
 import com.leclowndu93150.tinkersextraweapons.TKEWMain;
 import com.leclowndu93150.tinkersextraweapons.common.item.weapon.ModifiableMeleeWeaponItem;
+import com.leclowndu93150.tinkersextraweapons.common.item.weapon.ParryingDaggerItem;
 import net.minecraft.world.item.Item;
 import slimeknights.mantle.registration.deferred.ItemDeferredRegister;
 import slimeknights.mantle.registration.object.ItemObject;
@@ -27,8 +28,8 @@ public class TKEWTools {
     public static final ItemObject<ModifiableMeleeWeaponItem> QUARTERSTAFF = ITEMS.register(
             "quarterstaff", () -> new ModifiableMeleeWeaponItem(UNSTACKABLE, TKEWDefinitions.QUARTERSTAFF));
 
-    public static final ItemObject<ModifiableMeleeWeaponItem> PARRYING_DAGGER = ITEMS.register(
-            "parrying_dagger", () -> new ModifiableMeleeWeaponItem(UNSTACKABLE, TKEWDefinitions.PARRYING_DAGGER));
+    public static final ItemObject<ParryingDaggerItem> PARRYING_DAGGER = ITEMS.register(
+            "parrying_dagger", () -> new ParryingDaggerItem(UNSTACKABLE, TKEWDefinitions.PARRYING_DAGGER));
 
     public static final ItemObject<ModifiableMeleeWeaponItem> LANCE = ITEMS.register(
             "lance", () -> new ModifiableMeleeWeaponItem(UNSTACKABLE, TKEWDefinitions.LANCE));

@@ -25,7 +25,8 @@ public class TKEWPartSpriteProvider extends AbstractPartSpriteProvider {
         buildTool("warhammer")
                 .addHandle("handle")
                 .addBinding("binding")
-                .addBreakableHead("head");
+                .addBreakableHead("head0")
+                .addBreakableHead("head1");
 
         buildTool("lance")
                 .addHandle("handle")

@@ -18,5 +18,7 @@ public class TKEWModifierProvider extends AbstractModifierProvider {
     @Override
     protected void addModifiers() {
         buildModifier(TKEWModifierIds.CAVALRY);
+        buildModifier(TKEWModifierIds.QUAKE);
+        buildModifier(TKEWModifierIds.SWORDBREAKER);
     }
 }

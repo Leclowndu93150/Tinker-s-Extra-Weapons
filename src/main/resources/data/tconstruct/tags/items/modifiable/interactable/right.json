@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "tinkersextraweapons:pike",
+    "tinkersextraweapons:warhammer",
+    "tinkersextraweapons:lance",
+    "tinkersextraweapons:greatsword",
+    "tinkersextraweapons:sickle",
+    "tinkersextraweapons:boarding_axe",
+    "tinkersextraweapons:quarterstaff",
+    "tinkersextraweapons:parrying_dagger"
+  ]
+}
