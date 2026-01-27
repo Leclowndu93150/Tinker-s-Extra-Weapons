@@ -1,7 +1,9 @@
 package com.leclowndu93150.tinkersextraweapons.modifiers;
 
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.protocol.game.ClientboundSetEntityMotionPacket;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -14,7 +16,6 @@ import slimeknights.tconstruct.common.Sounds;
 import slimeknights.tconstruct.common.TinkerTags.Items;
 import slimeknights.tconstruct.common.network.TinkerNetwork;
 import slimeknights.tconstruct.library.modifiers.ModifierEntry;
-import slimeknights.tconstruct.library.modifiers.ModifierHooks;
 import slimeknights.tconstruct.library.modifiers.hook.build.ConditionalStatModifierHook;
 import slimeknights.tconstruct.library.modifiers.hook.interaction.GeneralInteractionModifierHook;
 import slimeknights.tconstruct.library.modifiers.hook.interaction.InteractionSource;
@@ -105,8 +106,30 @@ public class QuakeModifier extends SlingModifier {
         }
 
         entity.level().playSound(null, player.getX(), player.getY(), player.getZ(), Sounds.BONK.getSound(), player.getSoundSource(), 1.0f, 0.5f);
+        spawnExpandingRing((ServerLevel) entity.level(), player.getX(), player.getY() + 0.1, player.getZ(), RADIUS);
         player.causeFoodExhaustion(0.2f);
         player.getCooldowns().addCooldown(tool.getItem(), 40);
         ToolDamageUtil.damageAnimated(tool, 2, entity);
+    }
+
+    private void spawnExpandingRing(ServerLevel level, double centerX, double centerY, double centerZ, float maxRadius) {
+        int rings = 8;
+        int particlesPerRing = 24;
+
+        for (int ring = 0; ring < rings; ring++) {
+            float radius = (maxRadius / rings) * (ring + 1);
+            float yOffset = ring * 0.05f;
+
+            for (int i = 0; i < particlesPerRing; i++) {
+                double angle = (2 * Math.PI / particlesPerRing) * i;
+                double x = centerX + Math.cos(angle) * radius;
+                double z = centerZ + Math.sin(angle) * radius;
+
+                double outwardX = Math.cos(angle) * 0.1;
+                double outwardZ = Math.sin(angle) * 0.1;
+
+                level.sendParticles(ParticleTypes.CLOUD, x, centerY + yOffset, z, 1, outwardX, 0.02, outwardZ, 0.01);
+            }
+        }
     }
 }

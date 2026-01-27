@@ -1,18 +1,45 @@
 {
   "loader": "tconstruct:tool",
   "parent": "forge:item/default-tool",
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [ 0, -90, 55 ],
+      "translation": [ 0, 8.50, 0.5 ],
+      "scale": [ 1.70, 1.70, 0.85 ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [ 0, 90, -55 ],
+      "translation": [ 0, 8.50, 0.5 ],
+      "scale": [ 1.70, 1.70, 0.85 ]
+    },
+    "firstperson_righthand": {
+      "rotation": [ 0, -90, 30 ],
+      "translation": [ 1.0, 4.0, 1.25 ],
+      "scale": [ 0.95, 0.95, 0.425 ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [ 0, 90, -30 ],
+      "translation": [ 1.0, 4.0, 1.25 ],
+      "scale": [ 0.95, 0.95, 0.425 ]
+    },
+    "ground": {
+      "rotation": [ 0, 0, 0 ],
+      "translation": [ 0.00, 4.25, 0.00 ],
+      "scale": [ 0.9375, 0.9375, 0.46875 ]
+    }
+  },
   "textures": {
     "handle0": "tinkersextraweapons:item/tool/greatsword/handle0",
     "handle1": "tinkersextraweapons:item/tool/greatsword/handle1",
-    "blade0":  "tinkersextraweapons:item/tool/greatsword/blade0",
-    "blade1":  "tinkersextraweapons:item/tool/greatsword/blade1"
+    "blade0": "tinkersextraweapons:item/tool/greatsword/blade0",
+    "blade1": "tinkersextraweapons:item/tool/greatsword/blade1"
   },
   "modifier_roots": [ "tinkersextraweapons:item/tool/greatsword/modifiers/" ],
   "parts": [
     { "name": "handle0", "index": 0 },
     { "name": "handle1", "index": 1 },
-    { "name": "blade0",  "index": 2 },
-    { "name": "blade1",  "index": 3 }
+    { "name": "blade0", "index": 2 },
+    { "name": "blade1", "index": 3 }
   ],
   "overrides": [
     {
