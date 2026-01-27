@@ -56,7 +56,9 @@ public class TKEWToolDefinitions extends AbstractToolDefinitionDataProvider {
                         .set(ToolStats.DURABILITY, 0.6f).build()))
                 .module(ToolSlotsModule.builder()
                         .slots(SlotType.UPGRADE, 3)
-                        .slots(SlotType.ABILITY, 1).build());
+                        .slots(SlotType.ABILITY, 1).build())
+                .module(ToolTraitsModule.builder()
+                        .trait(TKEWModifierIds.REACH, 2).build());
 
         define(TKEWDefinitions.WARHAMMER)
                 .module(PartStatsModule.parts()
@@ -122,9 +124,11 @@ public class TKEWToolDefinitions extends AbstractToolDefinitionDataProvider {
                 .module(defaultThree)
                 .module(new SetStatsModule(StatsNBT.builder()
                         .set(ToolStats.ATTACK_DAMAGE, 3f)
-                        .set(ToolStats.ATTACK_SPEED, 1.7f).build()))
+                        .set(ToolStats.ATTACK_SPEED, 1.7f)
+                        .set(ToolStats.MINING_SPEED, 2f).build()))
                 .module(new MultiplyStatsModule(MultiplierNBT.builder()
                         .set(ToolStats.DURABILITY, 0.5f).build()))
+                .module(IsEffectiveModule.tag(BlockTags.MINEABLE_WITH_HOE))
                 .module(ToolSlotsModule.builder()
                         .slots(SlotType.UPGRADE, 4)
                         .slots(SlotType.ABILITY, 2).build());
@@ -162,7 +166,9 @@ public class TKEWToolDefinitions extends AbstractToolDefinitionDataProvider {
                 .module(ToolSlotsModule.builder()
                         .slots(SlotType.UPGRADE, 3)
                         .slots(SlotType.ABILITY, 1).build())
-                .module(new SweepWeaponAttack(1));
+                .module(new SweepWeaponAttack(1))
+                .module(ToolTraitsModule.builder()
+                        .trait(TKEWModifierIds.REACH, 1).build());
 
         define(TKEWDefinitions.PARRYING_DAGGER)
                 .module(PartStatsModule.parts()
@@ -177,7 +183,9 @@ public class TKEWToolDefinitions extends AbstractToolDefinitionDataProvider {
                         .set(ToolStats.DURABILITY, 0.6f).build()))
                 .module(ToolSlotsModule.builder()
                         .slots(SlotType.UPGRADE, 3)
-                        .slots(SlotType.ABILITY, 1).build());
+                        .slots(SlotType.ABILITY, 1).build())
+                .module(ToolTraitsModule.builder()
+                        .trait(TKEWModifierIds.ARMOR_BONUS, 1).build());
     }
 
     @Override

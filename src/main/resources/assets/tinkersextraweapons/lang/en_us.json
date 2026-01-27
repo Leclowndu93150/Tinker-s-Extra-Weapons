@@ -21,5 +21,10 @@
 
   "modifier.tinkersextraweapons.swordbreaker": "Swordbreaker",
   "modifier.tinkersextraweapons.swordbreaker.flavor": "Disarm the foe.",
-  "modifier.tinkersextraweapons.swordbreaker.description": "Applies Weakness to targets for 2 seconds on hit."
+  "modifier.tinkersextraweapons.swordbreaker.description": "Applies Weakness to targets for 2 seconds on hit.",
+
+  "modifier.tinkersextraweapons.armor_bonus": "Defensive",
+  "modifier.tinkersextraweapons.armor_bonus.flavor": "A sturdy guard.",
+  "modifier.tinkersextraweapons.armor_bonus.description": "Provides armor protection while held.",
+  "modifier.tinkersextraweapons.armor_bonus.armor": "Armor"
 }

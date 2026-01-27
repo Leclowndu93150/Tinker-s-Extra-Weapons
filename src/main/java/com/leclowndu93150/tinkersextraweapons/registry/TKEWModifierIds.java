@@ -14,6 +14,7 @@ public final class TKEWModifierIds {
     public static final ModifierId CAVALRY = id("cavalry");
     public static final ModifierId QUAKE = id("quake");
     public static final ModifierId SWORDBREAKER = id("swordbreaker");
+    public static final ModifierId ARMOR_BONUS = id("armor_bonus");
     public static final ModifierId REACH = new ModifierId("tconstruct", "reach");
     public static final ModifierId KNOCKBACK = new ModifierId("tconstruct", "knockback");
 }

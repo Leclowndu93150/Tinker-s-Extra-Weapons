@@ -14,5 +14,6 @@ public class TKEWModifiers {
         event.registerStatic(TKEWModifierIds.CAVALRY, new CavalryModifier());
         event.registerStatic(TKEWModifierIds.QUAKE, new QuakeModifier());
         event.registerStatic(TKEWModifierIds.SWORDBREAKER, new SwordbreakerModifier());
+        event.registerStatic(TKEWModifierIds.ARMOR_BONUS, new ArmorBonusModifier(2f));
     }
 }
