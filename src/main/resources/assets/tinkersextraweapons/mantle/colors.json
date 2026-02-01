@@ -1,0 +1,8 @@
+{
+  "modifier.tinkersextraweapons": {
+    "cavalry":     "#8B4513",
+    "quake":       "#7B5B3A",
+    "swordbreaker": "#5A5A5A",
+    "armor_bonus": "#A8A8A8"
+  }
+}
