@@ -29,15 +29,15 @@
     }
   },
   "textures": {
-    "handle0": "tinkersextraweapons:item/tool/quarterstaff/handle0",
-    "handle1": "tinkersextraweapons:item/tool/quarterstaff/handle1",
-    "collar": "tinkersextraweapons:item/tool/quarterstaff/collar"
+    "handle": "tinkersextraweapons:item/tool/quarterstaff/handle",
+    "head": "tinkersextraweapons:item/tool/quarterstaff/head",
+    "binding": "tinkersextraweapons:item/tool/quarterstaff/binding"
   },
   "modifier_roots": [ "tinkersextraweapons:item/tool/quarterstaff/modifiers/" ],
   "parts": [
-    { "name": "handle0", "index": 0 },
-    { "name": "handle1", "index": 1 },
-    { "name": "collar", "index": 2 }
+    { "name": "handle", "index": 0 },
+    { "name": "head", "index": 1 },
+    { "name": "binding", "index": 2 }
   ],
   "overrides": [
     {

@@ -20,6 +20,7 @@ import slimeknights.tconstruct.library.tools.nbt.MultiplierNBT;
 import slimeknights.tconstruct.library.tools.nbt.StatsNBT;
 import slimeknights.tconstruct.library.tools.stat.ToolStats;
 
+import static slimeknights.tconstruct.tools.TinkerToolParts.adzeHead;
 import static slimeknights.tconstruct.tools.TinkerToolParts.broadBlade;
 import static slimeknights.tconstruct.tools.TinkerToolParts.hammerHead;
 import static slimeknights.tconstruct.tools.TinkerToolParts.largePlate;
@@ -155,14 +156,14 @@ public class TKEWToolDefinitions extends AbstractToolDefinitionDataProvider {
         define(TKEWDefinitions.QUARTERSTAFF)
                 .module(PartStatsModule.parts()
                         .part(toolHandle)
-                        .part(toolHandle)
+                        .part(adzeHead)
                         .part(toughBinding).build())
                 .module(defaultThree)
                 .module(new SetStatsModule(StatsNBT.builder()
                         .set(ToolStats.ATTACK_DAMAGE, 2f)
                         .set(ToolStats.ATTACK_SPEED, 1.5f).build()))
                 .module(new MultiplyStatsModule(MultiplierNBT.builder()
-                        .set(ToolStats.DURABILITY, 0.7f).build()))
+                        .set(ToolStats.DURABILITY, 1.17f).build()))
                 .module(ToolSlotsModule.builder()
                         .slots(SlotType.UPGRADE, 3)
                         .slots(SlotType.ABILITY, 1).build())

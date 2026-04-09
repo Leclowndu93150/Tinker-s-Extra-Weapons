@@ -51,8 +51,8 @@ public class TKEWPartSpriteProvider extends AbstractPartSpriteProvider {
                 .addBreakableHead("blade");
 
         buildTool("quarterstaff")
-                .addHandle("handle0")
-                .addHandle("handle1")
+                .addHandle("handle")
+                .addBreakableHead("head")
                 .addBinding("binding");
 
         buildTool("parrying_dagger")

@@ -60,9 +60,9 @@ public class TKEWStationSlotLayoutProvider extends AbstractStationSlotLayoutProv
 
         defineModifiable(TKEWTools.QUARTERSTAFF)
                 .sortIndex(SORT_WEAPON)
-                .addInputItem(TinkerToolParts.toolHandle,   12, 62)
-                .addInputItem(TinkerToolParts.toolHandle,   30, 44)
-                .addInputItem(TinkerToolParts.toughBinding, 48, 26)
+                .addInputItem(TinkerToolParts.toolHandle,    12, 62)
+                .addInputItem(TinkerToolParts.adzeHead,      30, 44)
+                .addInputItem(TinkerToolParts.toughBinding,  48, 26)
                 .build();
 
         defineModifiable(TKEWTools.PARRYING_DAGGER)
